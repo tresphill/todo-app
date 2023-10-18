@@ -8,7 +8,6 @@ export default function Home() {
         <div className="task-box">
           <div className="input">
             <input />
-            <button>+</button>
           </div>
         </div>
       </div>
