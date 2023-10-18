@@ -27,6 +27,7 @@
 * will i have time to have full functionality and a sleek deisgn?
 * how will i store and render all tasks that are input?
 * how will i create a function to restore all completed tasks?
+* how do i use 'enter' key to log inputs?
 
 ---
 
@@ -39,6 +40,6 @@ explain -
 * i need to create an app that allows a user to input tasks and see them listed
 * it will need to have functionality so tasks can be added/deleted
 * it will need some sort of indicator that tasks have been completed (strikethrough)
-* it will need selectors like "all, completed, to-do)
+* it will need selectors like "all, completed, to-do"
 positive self talk - you have all the resources at hand, dont be afraid to ask for help when stuck, you are driven by discomfort
 translate - my app will speak for itself 
