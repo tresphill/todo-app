@@ -11,7 +11,7 @@
     align-items: center;
     width: 1298px;
     height: 559px;
-    background: linear-gradient(120deg, #585858, #c2c0a4, #f3f0df);
+    background: linear-gradient(120deg, #585858, #807e6d, #f3f0df);
 }
 
 .bg::before {
@@ -41,7 +41,7 @@
 .input input {
     border-radius: 10px;
     border: 0;
-    background-color: rgb(224, 223, 223);
+    background-color: rgb(252, 246, 213);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -59,7 +59,7 @@
     padding: 30px 20px;
     height: 500px;
     width: 500px;
-    background: linear-gradient(320deg, #2b2b2b, #c2c0a4, #cfccbf);
+    background: linear-gradient(320deg, #585858, #807e6d, #bdbbae);
     position: absolute;
     top: 5%;
     left: 30%;
@@ -87,9 +87,19 @@ button{
     position: absolute;
     bottom: 41px;
     right: 129px;
-    background-color: orange;
+    background-color: rgb(212, 172, 97);
     border: none;
 }
+
+/* button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/static.jpg) repeat center;
+    mix-blend-mode: multiply;
+} */
 
 .list-items {
     width: 300px;
