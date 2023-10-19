@@ -28,6 +28,7 @@
 * how will i store and render all tasks that are input?
 * how will i create a function to restore all completed tasks?
 * how do i use 'enter' key to log inputs?
+* how will i create the box that tasks are stored in?
 
 ---
 
