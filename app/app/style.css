@@ -38,7 +38,7 @@
     border: solid 1px black;
     height: 500px;
     width: 500px;
-    background: linear-gradient(320deg, #252525, #c1be9a, #f3f0df);
+    /* background: linear-gradient(320deg, #252525, #c1be9a, #f3f0df); */
     position: absolute;
     top: 5%;
     left: 30%;
@@ -53,4 +53,12 @@ button{
     right: 129px;
     background-color: orange;
     border: none;
+}
+
+.list-items {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 40px;
+    text-align: center;
 }
