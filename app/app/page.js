@@ -4,25 +4,30 @@ import React from "react"
 import Style from './style.css'
 
 export default function App() {
-  const {currentItem, setCurrentItem} = useState(null);
-  const {itemList, updateItemList} = useState([]);
+  const [ currentItem, setCurrentItem ] = useState([]);
+  const [ itemList, updateItemList ] = useState([]);
 
   const onChangeHandler = (e) => {
     // jdh
-    console.log(e);
+    // console.log(e);
     setCurrentItem(e.target.value)
-  }
+  };
+
+  let addItemToList = () => {
+    updateItemList([...itemList, currentItem])
+    console.log(itemList);
+  };
 
   return (
     <main className={Style.main}>
-        <div className="outside-box1">
-          <div className="task-box">
-            <div className="input">
-              <input value={currentItem} onChange={onChangeHandler} placeholder="Add a task"/>
-              <button>+</button>
-            </div>
+      <div className="outside-box1">
+        <div className="task-box">
+          <div className="input">
+            <input value={currentItem} onChange={onChangeHandler} placeholder="Add a task" />
+            <button onClick={addItemToList}>+</button>
           </div>
         </div>
+      </div>
     </main>
   )
 }
