@@ -6,7 +6,7 @@ import List from './components/listitems';
 export default function App() {
   const [currentItem, setCurrentItem] = useState('');
   const [itemList, updateItemList] = useState([]);
-  
+
   useEffect(() => {
     localStorage.setItem('text', JSON.stringify(currentItem))
   }, [currentItem]);
@@ -23,7 +23,7 @@ export default function App() {
 
   const addItemToList = () => {
     if (currentItem.trim() === '') {
-      return; 
+      return;
     }
 
     updateItemList([...itemList, { item: currentItem, key: Date.now() }]);
