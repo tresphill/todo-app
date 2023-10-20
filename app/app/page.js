@@ -32,7 +32,7 @@ export default function App() {
         <div className="outside-box1">
           <div className="task-box">
             <div className='list-items'>
-              <List itemList={itemList} />
+              <List itemList={itemList} updateItemList={updateItemList} />
             </div>
             <div className="input">
               <input

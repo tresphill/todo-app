@@ -1,4 +1,10 @@
 export default function List(props) {
+    const deleteItem = (key) => {
+        const newList = props.itemList.filter(itemObj =>{
+            return itemObj.key !== key;
+        })
+        props.updateItemList(newList);
+    }
     console.log(props);
     return (
         <div className="item-list">
@@ -6,7 +12,7 @@ export default function List(props) {
                 return(
                 <div className="item-x">
                     <p>{itemObj.item}</p>
-                    <button>X</button>
+                    <button onClick={() => deleteItem(itemObj.key)}>X</button>
                 </div>
                 )
             })}

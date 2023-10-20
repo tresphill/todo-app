@@ -139,5 +139,6 @@ button{
 .item-x button {
     position: inherit;
     border: 1px solid black;
+    background-color: #b58245;
     opacity: 50%;
 }
