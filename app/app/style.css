@@ -38,6 +38,10 @@
     border-radius: 10px;
 }
 
+input {
+    opacity: 80%;
+}
+
 input:focus {
     outline: solid #585858;
 }
