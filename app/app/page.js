@@ -1,11 +1,15 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Style from './style.css';
 import List from './components/listitems';
 
 export default function App() {
   const [currentItem, setCurrentItem] = useState('');
   const [itemList, updateItemList] = useState([]);
+  
+  useEffect(() => {
+    localStorage.setItem('text', JSON.stringify(currentItem))
+  }, [currentItem]);
 
   const onChangeHandler = (e) => {
     setCurrentItem(e.target.value);
