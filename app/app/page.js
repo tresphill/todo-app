@@ -1,21 +1,28 @@
 "use client"
-import { useState } from 'react'
-import React from "react"
-import Style from './style.css'
-import List from './components/listitems'
+import React, { useState } from 'react';
+import Style from './style.css';
+import List from './components/listitems';
 
 export default function App() {
-  const [currentItem, setCurrentItem] = useState([]);
+  const [currentItem, setCurrentItem] = useState('');
   const [itemList, updateItemList] = useState([]);
 
   const onChangeHandler = (e) => {
-    // jdh
-    // console.log(e);
-    setCurrentItem(e.target.value)
+    setCurrentItem(e.target.value);
   };
 
-  let addItemToList = () => {
-    updateItemList([...itemList, { item: currentItem, key: Date.now() }])
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      addItemToList();
+    }
+  };
+
+  const addItemToList = () => {
+    if (currentItem.trim() === '') {
+      return; 
+    }
+
+    updateItemList([...itemList, { item: currentItem, key: Date.now() }]);
     setCurrentItem('');
   };
 
@@ -28,12 +35,17 @@ export default function App() {
               <List itemList={itemList} />
             </div>
             <div className="input">
-              <input value={currentItem} onChange={onChangeHandler} placeholder="Add a task" />
+              <input
+                value={currentItem}
+                onChange={onChangeHandler}
+                onKeyPress={handleKeyPress}
+                placeholder="Add a task"
+              />
               <button onClick={addItemToList}>+</button>
             </div>
           </div>
         </div>
       </div>
     </main>
-  )
+  );
 }
