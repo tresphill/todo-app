@@ -44,3 +44,10 @@ explain -
 * it will need selectors like "all, completed, to-do"
 positive self talk - you have all the resources at hand, dont be afraid to ask for help when stuck, you are driven by discomfort
 translate - my app will speak for itself 
+
+---
+
+# User Experience
+* crossing out tasks while viewing all tasks makes you feel more accomplished vs. empty task list
+* crossed out for the "pad and pen experience"
+* ugly border on input 

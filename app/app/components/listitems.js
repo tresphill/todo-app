@@ -1,11 +1,14 @@
-
-
-export default function List(props){
+export default function List(props) {
     console.log(props);
-    return(
-        <div>
-            {props.itemList.map((itemObj) =>{
-                return <p>{itemObj.item}</p>
+    return (
+        <div className="item-list">
+            {props.itemList.map((itemObj) => {
+                return(
+                <div className="item-x">
+                    <p>{itemObj.item}</p>
+                    <button>X</button>
+                </div>
+                )
             })}
         </div>
     )
